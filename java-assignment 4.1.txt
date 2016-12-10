@@ -1,0 +1,22 @@
+package myPack;
+
+public class NewClass {
+	protected void print(){
+		System.out.println("Hi! I am printing the statement");
+	}
+}
+
+
+package Java;
+import myPack.*;
+import java.util.*;
+public class Java extends NewClass{
+public void tpack(){
+	NewClass n= new NewClass();
+	print();
+}
+public static void main(String[] args){
+	Java j = new Java();
+	j.print();
+}
+}
